@@ -5,7 +5,7 @@ import Header from "./component/Header/Header";
 import Preloader from "./component/Preloader/Preloader";
 import Search from "./component/Search/Search";
 
-const API_KEY = process.env.REACT_APP_API_KEY
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 export default class App extends Component {
   state = {
@@ -14,19 +14,20 @@ export default class App extends Component {
   };
 
   componentDidMount = () => {
-    fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&type=movie&s=all`)
+    console.log(process.env);
+    fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=all`)
       .then((res) => res.json())
       .then((data) => this.setState({ movies: data.Search, loading: false }))
-      .catch((err)=>{
-        console.log(err)
-        this.setState({loading:false})
-      })
+      .catch((err) => {
+        console.log(err);
+        this.setState({ loading: false });
+      });
   };
 
   onSearchFunc = (str = "all", radio = "all") => {
     this.setState({ loading: true });
     fetch(
-      `https://www.omdbapi.com/?apikey=${API_KEY}=${str}${
+      `https://www.omdbapi.com/?apikey=${API_KEY}&s=${str}${
         radio !== "all" ? `&type=${radio}` : ""
       }`
     )
