@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/reat-movies/static/css/main.591f1eae.chunk.css",
+    "main.js": "/reat-movies/static/js/main.ba77d8d0.chunk.js",
+    "main.js.map": "/reat-movies/static/js/main.ba77d8d0.chunk.js.map",
+    "runtime-main.js": "/reat-movies/static/js/runtime-main.a780b059.js",
+    "runtime-main.js.map": "/reat-movies/static/js/runtime-main.a780b059.js.map",
+    "static/js/2.de80685f.chunk.js": "/reat-movies/static/js/2.de80685f.chunk.js",
+    "static/js/2.de80685f.chunk.js.map": "/reat-movies/static/js/2.de80685f.chunk.js.map",
+    "index.html": "/reat-movies/index.html",
+    "static/css/main.591f1eae.chunk.css.map": "/reat-movies/static/css/main.591f1eae.chunk.css.map",
+    "static/js/2.de80685f.chunk.js.LICENSE.txt": "/reat-movies/static/js/2.de80685f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a780b059.js",
+    "static/js/2.de80685f.chunk.js",
+    "static/css/main.591f1eae.chunk.css",
+    "static/js/main.ba77d8d0.chunk.js"
+  ]
+}
